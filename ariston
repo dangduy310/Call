@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Đang chuyển hướng...</title>
+  <script>
+    // Kiểm tra thiết bị có phải di động không
+    const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Nếu là điện thoại, chuyển sang gọi điện
+      window.location.href = "tel:19001517";
+    } else {
+      // Nếu là desktop, chuyển đến trang liên hệ (hoặc bất kỳ trang nào bạn muốn)
+      window.location.href = "https://www.ariston.com/vi-vn/dich-vu-khach-hang/"; // 👈 Thay link ở đây
+    }
+  </script>
+</head>
+<body>
+  <p>Đang chuyển hướng...</p>
+</body>
+</html>
